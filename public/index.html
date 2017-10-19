@@ -12,13 +12,15 @@
     <div class="reveal">
       <div class="slides">
         <section class="slide-block">
-          <section class="vertical-slide initial-slide credited-section" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/">
+          <section class="initial-slide credited-section" data-background-iframe="https://aframe.io/aframe/examples/animation/aframe-logo/">
             <h1>A-Frame: 3D HTML</h1>
             <h2 class="shadowed fragment">(sort of)</h2>
             <div class="credit">
               <h6>A-Frame's <a href="https://aframe.io/examples/showcase/helloworld/">home screen </a></h6>
             </div>
           </section>
+        </section>
+        <section class="slide-block">
           <section class="vertical-slide">
             <p>Virtual and mixed reality experiences are becoming mainstream</p>
             <p class="fragment">Huge array of devices</p>
@@ -26,43 +28,56 @@
           </section>
           <section class="vertical-slide">
             <h1>Enter the web</h1>
-            <p> Low-to-no cost of entry</p>
-            <p class="fragment">Lots of libraries:</p>
-            <ul>
-              <li class="fragment">Three.js</li>
-              <li class="fragment">Babylon.js</li>
-              <li class="fragment">Phaser</li>
-              <li class="fragment">PlayCanvas</li>
-              <li class="fragment">A-Frame</li>
-            </ul>
+            <p class="fragment">Low-to-no cost of entry</p>
+            <p class="fragment">Flash <span class="fragment">RIP</span></p>
           </section>
-          <section class="vertical-slide">
-            <h1>A-Frame facts</h1>
-            <p>Created by Mozilla at the end of 2015</p>
-            <p>Open-source, version 0.6.0 as of June 30th, 2017</p>
-            <p class="fragment">Focused on creating virtual reality experiences</p>
+          <section class="slide-block vertical-slide">
+            <h1>WebGL</h1>
+            <p>One-liner here</p>
+            <p>Why 2.0 is cool</p>
+            <p>Why it's not adopted fully</p>
           </section>
-          <section class="vertical-slide">
-            <h1>Example (360 video):</h1>
-            <pre><code>&lt;a-scene&gt;
- 
- &lt;a-assets&gt;
- 
-   &lt;video id="video-texture" src="assets/test-video.mp4" autoplay muted crossorigin="anonymous" playsinline -webkit-playsinline&gt;&lt;/video&gt;
- 
- &lt;/a-assets&gt;
- 
- &lt;a-videosphere src="#video-texture" rotation="0 255 0"&gt;&lt;/a-videosphere&gt;
- 
-&lt;/a-scene&gt;</code></pre>
-          </section>
-          <section class="vertical-slide credited-section" data-background-iframe="https://aframe.io/aframe/examples/boilerplate/360-video/">
-            <div class="credit">
-              <h6>A-Frame <a href="https://aframe.io/examples/showcase/videosphere/">example 360 videosphere</a></h6>
-            </div>
+          <section class="slide-block vertical-slide">
+            <h1>Web Ass(embly)</h1>
+            <p>High-performance calculations to COMPLEMENT JS</p>
+            <p>C++, Rust, Typescript???</p>
           </section>
         </section>
         <section class="slide-block">
+          <section class="vertical-slide">
+            <h1>Picking our poison</h1>
+            <p>Lots of libraries to help ease the pain points of 3D web development.</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>Three.JS</h1>
+            <p>Premiere, battle-hardened library</p>
+            <p>A-Frame and ReactVR both use Three.JS as their 3D rendering engine.</p>
+          </section>
+          <section class="vertical-slide">
+            <p>Phaser - game-specific framework</p>
+            <p>Babylon JS - TODO: 🤷</p>
+            <p>Third 🤷🤷🤷</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>ReactVR</h1>
+            <p>React...but 3D.</p>
+            <p>Need to build a few things to say another line here.</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>A-Frame!</h1>
+          </section>
+        </section>
+        <section class="slide-block">
+          <section class="vertical-slide">
+            <h1>A-Frame facts</h1>
+            <p>Created by Mozilla at the end of 2015</p>
+            <p>Open-source, version 0.7.0 as of [date]</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>The point</h1>
+            <p class="fragment">Focus on creating virtual reality experiences</p>
+            <p class="fragment">Still great to dive in and get messy.</p>
+          </section>
           <section class="vertical-slide">
             <h1>How it works</h1>
           </section>
@@ -85,80 +100,36 @@
           <section class="vertical-slide">
             <h1>Visual inspector</h1>
             <p class="fragment">Placing objects in 3D space is a challenge!</p>
-            <p class="fragment">Visual inspector the perfect way get in and messy - just hit <code>ctrl-alt-a</code>!</p>
-          </section>
-          <section class="vertical-slide credited-section" data-background-iframe="https://aframe.io/360-image-gallery-boilerplate/">
-            <div class="credit">
-              <h6>A-Frame <a href="https://aframe.io/360-image-gallery-boilerplate/">example 360 image gallery</a></h6>
-            </div>
+            <p class="fragment">Visual inspector the perfect way get in and messy - just hit <code>ctrl/cmd-alt-a</code>!</p>
           </section>
         </section>
         <section class="slide-block">
-          <section class="vertical-slide">
-            <h1>What others have done:</h1>
-          </section>
-          <section class="vertical-slide credited-section" data-background-image="./assets/mars-vr.PNG">
-            <h1>Journalism</h1>
-            <div class="credit">
-              <h6><a href="https://www.washingtonpost.com/video/mars/public/">Mars: An Interactive Journey, Washington Post</a></h6>
-            </div>
-          </section>
-          <section class="vertical-slide credited-section" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif">
-            <h1>Games</h1>
-            <div class="credit">
-              <h6><a href="https://github.com/lance-gg/sprocketleague">Sprocket League, Lance.GG </a></h6>
-            </div>
-          </section>
-          <section class="vertical-slide credited-section" data-background-iframe="http://vr.zeldman.com/">
-            <h1>Shopping!</h1>
-            <div class="credit">
-              <h6><a href="http://vr.zeldman.com/">furniture sale</a>, <a href="https://studio.zeldman.com/">studio.zeldman</a></h6>
-            </div>
-          </section>
-          <section class="vertical-slide">
-            <h1>My faves: weird virtual landscapes</h1>
-          </section>
-          <section class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/">
-            <div class="credit">
-              <h6><a href="https://github.com/CarpeDMT/CarpeDMT.github.io">CarpeDMT</a></h6>
-            </div>
-          </section>
+          <section class="vertical-slide"></section>
+          <h1>A-Frame in the wild</h1>
         </section>
-        <section class="slide-block">
-          <section class="vertical-slide">
-            <h1>A-Frame is what I love about the web:</h1>
-          </section>
-          <section class="vertical-slide">
-            <h1>Open by default</h1>
-            <p>Nothing to install to build or play</p>
-          </section>
-          <section class="vertical-slide">
-            <h1>Progressive enhancement </h1>
-            <p>Improved experience for different devices</p>
-          </section>
-          <section class="vertical-slide">
-            <h1>No gatekeepers</h1>
-            <p>Anyone with a browser and a smartphone has access</p>
-            <p class="fragment">Not mediated through Steam, Facebook or Google</p>
-          </section>
+        <section class="vertical-slide credited-section" data-background-image="./assets/mars-vr.PNG">
+          <h1>Journalism</h1>
+          <div class="credit">
+            <h6><a href="https://www.washingtonpost.com/video/mars/public/">Mars: An Interactive Journey, Washington Post</a></h6>
+          </div>
         </section>
-        <section class="slide-block">
-          <h1>Call to action</h1>
-          <p class="fragment">Use A-Frame to make games</p>
-          <p class="fragment">Use A-Frame to make weird JavaScript art</p>
-          <p class="fragment">Use A-Frame to dream up new kinds of realities</p>
+        <section class="vertical-slide credited-section" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif">
+          <h1>Games</h1>
+          <div class="credit">
+            <h6><a href="https://github.com/lance-gg/sprocketleague">Sprocket League, Lance.GG </a></h6>
+          </div>
         </section>
-        <section class="slide-block">
-          <h1>Tutorials</h1>
-          <p class="fragment">Tutorial by <a href="http://tiny.cc/aframe-tutorial">Alexandra Etienne</a> (http://tiny.cc/aframe-tutorial)</p>
-          <p class="fragment">Talk by A-Frame maintainers <a href="http://tiny.cc/aframe-talk">Kevin Ngo and Diego Marcos</a> (http://tiny.cc/aframe-talk)</p>
+        <section class="vertical-slide credited-section" data-background-iframe="http://vr.zeldman.com/">
+          <h1>Shopping!</h1>
+          <div class="credit"></div>
         </section>
-        <section class="slide-block">
-          <h1>👋 👋 👋</h1>
-          <p>Twitter: <a href="https://twitter.com/jordynmarcellus">@jordynmarcellus</a></p>
-          <p>Github: <a href="https://github.com/jordynmarcellus">jordynmarcellus</a></p>
-          <p>Website: <a href="https://www.jordynmarcellus.com">www.jordynmarcellus.com</a></p>
-          <p>Email:<a mailto="jordynmarcellus@gmail.com">jordynmarcellus@gmail.com</a></p>
+        <section class="vertical-slide">
+          <h1>My faves: weird virtual landscapes</h1>
+        </section>
+        <section class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/">
+          <div class="credit">
+            <h6><a href="https://github.com/CarpeDMT/CarpeDMT.github.io">CarpeDMT</a></h6>
+          </div>
         </section>
       </div>
     </div>
