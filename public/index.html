@@ -22,25 +22,65 @@
         </section>
         <section class="slide-block">
           <section class="vertical-slide">
-            <p>Virtual and mixed reality experiences are becoming mainstream</p>
-            <p class="fragment">Huge array of devices</p>
-            <p class="fragment">Usually, built in 3D game engine like <a href="https://unity3d.com/">Unity</a> (written in C#) or <a href="https://www.unrealengine.com/what-is-unreal-engine-4">Unreal</a> (written in C++)</p>
+            <h1>A-Frame is what I love about the web</h1>
           </section>
           <section class="vertical-slide">
-            <h1>Enter the web</h1>
-            <p class="fragment">Low-to-no cost of entry</p>
-            <p class="fragment">Flash <span class="fragment">RIP</span></p>
+            <p>Virtual and mixed reality experiences are becoming mainstream</p>
+            <p class="fragment">Huge array of devices</p>
+            <p class="fragment">Usually, built in 3D game engines like <a href="https://unity3d.com/">Unity</a> (written in C#) or <a href="https://www.unrealengine.com/what-is-unreal-engine-4">Unreal</a> (written in C++)</p>
           </section>
-          <section class="slide-block vertical-slide">
-            <h1>WebGL</h1>
-            <p>One-liner here</p>
-            <p>Why 2.0 is cool</p>
-            <p>Why it's not adopted fully</p>
+          <section class="vertical-slide">
+            <h1>The web is perfect for 3D and mixed reality experiences</h1>
+            <p class="fragment">Low cost of entry</p>
+            <p class="fragment">Reach</p>
+            <p class="fragment">Multi-platform</p>
           </section>
-          <section class="slide-block vertical-slide">
-            <h1>Web Ass(embly)</h1>
-            <p>High-performance calculations to COMPLEMENT JS</p>
-            <p>C++, Rust, Typescript???</p>
+          <section class="vertical-slide">
+            <h1>Open by default</h1>
+            <p>Nothing to install</p>
+            <p class="fragment">Though you have to be careful with large assets</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>Progressive enhancement </h1>
+            <p>Improve experience for different devices </p>
+            <ul> 
+              <li class="fragment">Wand controllers for room-scale rig VR rig</li>
+              <li class="fragment">Mouse and keyboard controls for computer.</li>
+              <li class="fragment">Gaze controls for mobile.</li>
+            </ul>
+          </section>
+          <section class="vertical-slide">
+            <h1>No gatekeepers</h1>
+            <p>Anyone with a browser and a smartphone has access</p>
+            <p class="fragment">Not mediated through Steam, Facebook, Google or Samsung.</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>The WebVR standard </h1>
+            <p class="fragment">Fractured landscape, uneven implementations.</p>
+            <p class="fragment">Thankfully <a href="https://github.com/googlevr/webvr-polyfill">there's a polyfill</a>.</p>
+          </section>
+          <section class="vertical-slide"><img src="./assets/webvr-compat-chart.png"></section>
+        </section>
+        <section class="slide-block">
+          <section class="vertical-slide">
+            <h1>A brief history of the 3D web</h1>
+            <p class="fragment">But first a moment of silence for Flash</p>
+          </section>
+          <section class="vertical-slide">
+            <p>WebGL, spec release: March 3rd, 2011</p><img src="./assets/webgl-compat-chart.png">
+          </section>
+          <section class="vertical-slide">
+            <p>WebGL 2.0, spec release: Jan. 2017</p><img src="./assets/webgl-2_0-compat-chart.png">
+            <p class="fragment"><a href="https://playcanv.as/e/p/44MRmJRU/">After the Flood </a> brings console-level graphics -- to the <em>browser</em>.</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>Web Assembly</h1>
+            <p>High-performance calculations complementing JS</p>
+            <ul>
+              <li class="fragment">C++, </li>
+              <li class="fragment">Rust, </li>
+              <li class="fragment">Typescript 😈</li>
+            </ul>
           </section>
         </section>
         <section class="slide-block">
@@ -54,13 +94,14 @@
             <p>A-Frame and ReactVR both use Three.JS as their 3D rendering engine.</p>
           </section>
           <section class="vertical-slide">
-            <p>Phaser - game-specific framework</p>
-            <p>Babylon JS - TODO: 🤷</p>
-            <p>Third 🤷🤷🤷</p>
+            <h1>Other libraries</h1>
+            <p class="fragment">Phaser - game-specific framework</p>
+            <p class="fragment">BabylonJS </p>
+            <p class="fragment">PlayCanvas </p>
           </section>
           <section class="vertical-slide">
             <h1>ReactVR</h1>
-            <p>React...but 3D.</p>
+            <p>React... but 3D.</p>
             <p>Need to build a few things to say another line here.</p>
           </section>
           <section class="vertical-slide">
@@ -71,20 +112,42 @@
           <section class="vertical-slide">
             <h1>A-Frame facts</h1>
             <p>Created by Mozilla at the end of 2015</p>
-            <p>Open-source, version 0.7.0 as of [date]</p>
+            <p>Open-source, version 0.7.0 as of Sept. 27th, 2017. </p>
+            <p class="fragment">Focus on creating virtual reality experiences. </p>
+            <p class="fragment">Used for AR, and general 3D scenes as well! </p>
           </section>
           <section class="vertical-slide">
-            <h1>The point</h1>
-            <p class="fragment">Focus on creating virtual reality experiences</p>
-            <p class="fragment">Still great to dive in and get messy.</p>
-          </section>
-          <section class="vertical-slide">
-            <h1>How it works</h1>
+            <h1>How A-Frame works</h1>
           </section>
           <section class="vertical-slide">
             <h1>HTML5 Custom elements</h1>
-            <p class="fragment">Allow you to write HTML-like syntax for 3D objects on the web</p>
+            <p class="fragment">Allow you to write HTML-like syntax for 3D objects on the web.</p>
             <p class="fragment">Can use stadard DOM selection APIs like <code>document.querySelector</code> (or jQuery!) to manipulate 3D objects</p>
+          </section>
+          <section class="vertical-slide">
+            <h1>Example (360 video):</h1>
+            <pre><code>&lt;a-scene&gt;
+
+ &lt;a-assets&gt;
+
+   &lt;video id="video-texture" src="assets/test-video.mp4" autoplay muted crossorigin="anonymous" playsinline -webkit-playsinline&gt;&lt;/video&gt;
+
+ &lt;/a-assets&gt;
+
+ &lt;a-videosphere src="#video-texture" rotation="0 255 0"&gt;&lt;/a-videosphere&gt;
+
+&lt;/a-scene&gt;</code></pre>
+          </section>
+          <section class="vertical-slide credited-section" data-background-iframe="https://aframe.io/aframe/examples/boilerplate/360-video/">
+            <div class="credit">
+              <h6>A-Frame <a href="https://aframe.io/examples/showcase/videosphere/">example 360 videosphere</a></h6>
+            </div>
+          </section>
+          <section class="vertical-slide">
+            <h1>Entity-component system</h1>
+            <p class="fragment">3D/game design pattern</p>
+            <p class="fragment">Composition over inheritance </p>
+            <p class="fragment">Think in components <span class="fragment">...just like React</span></p>
           </section>
           <section class="vertical-slide">
             <h1>Abstracts three.js</h1>
@@ -104,32 +167,62 @@
           </section>
         </section>
         <section class="slide-block">
-          <section class="vertical-slide"></section>
-          <h1>A-Frame in the wild</h1>
+          <h1>Some fun community components</h1>
         </section>
-        <section class="vertical-slide credited-section" data-background-image="./assets/mars-vr.PNG">
-          <h1>Journalism</h1>
-          <div class="credit">
-            <h6><a href="https://www.washingtonpost.com/video/mars/public/">Mars: An Interactive Journey, Washington Post</a></h6>
-          </div>
+        <section class="slide-block">
+          <section class="vertical-slide">
+            <h1>A-Frame in the wild</h1>
+          </section>
+          <section class="vertical-slide credited-section" data-background-image="./assets/mars-vr.PNG">
+            <h1>Journalism</h1>
+            <div class="credit">
+              <h6><a href="https://www.washingtonpost.com/video/mars/public/">Mars: An Interactive Journey, Washington Post</a></h6>
+            </div>
+          </section>
+          <section class="vertical-slide credited-section" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif">
+            <h1>Games</h1>
+            <div class="credit">
+              <h6><a href="https://github.com/lance-gg/sprocketleague">Sprocket League, Lance.GG </a></h6>
+            </div>
+          </section>
+          <section class="vertical-slide credited-section" data-background-iframe="http://vr.zeldman.com/">
+            <h1>Shopping!</h1>
+            <div class="credit"></div>
+          </section>
+          <section class="vertical-slide">
+            <h1>My faves: weird virtual landscapes</h1>
+          </section>
+          <section class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/">
+            <div class="credit">
+              <h6><a href="https://github.com/CarpeDMT/CarpeDMT.github.io">CarpeDMT</a></h6>
+            </div>
+          </section>
+          <section class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/">
+            <div class="credit">
+              <h6><a href="http://caff.glitch.me/%F0%9F%8D%95/">caff.glitch.me/🍕</a></h6>
+            </div>
+          </section>
         </section>
-        <section class="vertical-slide credited-section" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif">
-          <h1>Games</h1>
-          <div class="credit">
-            <h6><a href="https://github.com/lance-gg/sprocketleague">Sprocket League, Lance.GG </a></h6>
-          </div>
+        <section class="slide-block">
+          <h1>Call to action</h1>
+          <p class="fragment">Use A-Frame to make games</p>
+          <p class="fragment">Use A-Frame to make weird JavaScript art</p>
+          <p class="fragment">Use A-Frame to dream up new kinds of realities</p>
         </section>
-        <section class="vertical-slide credited-section" data-background-iframe="http://vr.zeldman.com/">
-          <h1>Shopping!</h1>
-          <div class="credit"></div>
+        <section class="slide-block">
+          <h1>Tutorials</h1>
+          <p class="fragment">Tutorial by <a href="http://tiny.cc/aframe-tutorial">Alexandra Etienne</a> (http://tiny.cc/aframe-tutorial)</p>
+          <p class="fragment">Talk by A-Frame maintainers <a href="http://tiny.cc/aframe-talk">Kevin Ngo and Diego Marcos</a> (http://tiny.cc/aframe-talk)</p>
         </section>
-        <section class="vertical-slide">
-          <h1>My faves: weird virtual landscapes</h1>
+        <section class="slide-block">
+          <h1>Let's make something! </h1>
         </section>
-        <section class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/">
-          <div class="credit">
-            <h6><a href="https://github.com/CarpeDMT/CarpeDMT.github.io">CarpeDMT</a></h6>
-          </div>
+        <section class="slide-block">
+          <h1>👋 👋 👋</h1>
+          <p>Twitter: <a href="https://twitter.com/jordynmarcellus">@jordynmarcellus</a></p>
+          <p>Github: <a href="https://github.com/jordynmarcellus">jordynmarcellus</a></p>
+          <p>Website: <a href="https://www.jordynmarcellus.com">www.jordynmarcellus.com</a></p>
+          <p>Email:<a mailto="jordynmarcellus@gmail.com">jordynmarcellus@gmail.com</a></p>
         </section>
       </div>
     </div>
