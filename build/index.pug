@@ -24,15 +24,34 @@ html(lang="en")
 						//- Get audience on your side
 						h1 A-Frame is what I love about the web
 					section.vertical-slide
+						h1 What's been done with A-Frame so far
+					section(class="vertical-slide credited-section" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif")
+						h1 Games
+						.credit
+							h6 #[a(href="https://github.com/lance-gg/sprocketleague") Sprocket League, Lance.GG ]
+					section(class="vertical-slide credited-section" data-background-iframe="https://aframe.io/examples/showcase/a-painter/")
+						h1 Tiltbrush-alike
+						.credit
+							h6 #[a(href="https://aframe.io/examples/showcase/a-painter/") ]
+					section.vertical-slide
+						h1 My faves: weird virtual landscapes
+					section(class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/")
+						.credit
+							h6 #[a(href="https://github.com/CarpeDMT/CarpeDMT.github.io") CarpeDMT]
+					section(class="vertical-slide credited-section" data-background-iframe="http://caff.glitch.me/%F0%9F%8D%95/")
+						.credit
+							h6 #[a(href="http://caff.glitch.me/%F0%9F%8D%95/") caff.glitch.me/🍕]
+				section.slide-block
+					section.vertical-slide
 						//- We're in A Moment. The web is eating the world, and browsers are quickly getting to a point where devs can deliver high-quality 3D experiences.
-						p Virtual and mixed reality experiences are becoming mainstream
+						p Virtual and mixed reality experiences slowly mainstreaming
 						p.fragment Huge array of devices
 						p.fragment Usually, built in 3D game engines like #[a(href="https://unity3d.com/") Unity] (written in C#) or #[a(href="https://www.unrealengine.com/what-is-unreal-engine-4") Unreal] (written in C++)
 					section.vertical-slide
 						h1 The web is perfect for 3D and mixed reality experiences
 						p.fragment Low cost of entry
 						p.fragment Reach
-						p.fragment Multi-platform
+						p.fragment Platform agnostic
 					section.vertical-slide
 						h1 Open by default
 						p Nothing to install
@@ -40,16 +59,16 @@ html(lang="en")
 					section.vertical-slide
 						h1 Progressive enhancement 
 						p Improve experience for different devices 
-						ul 
-							li.fragment Wand controllers for room-scale rig VR rig
-							li.fragment Mouse and keyboard controls for computer.
+						ul
 							li.fragment Gaze controls for mobile.
+							li.fragment Mouse and keyboard controls for computer.
+							li.fragment Wand controllers for room-scale rig VR rig
 					section.vertical-slide
 						h1 No gatekeepers
 						p Anyone with a browser and a smartphone has access
 						p.fragment Not mediated through Steam, Facebook, Google or Samsung.
 					section.vertical-slide
-						h1 The WebVR standard 
+						h1 The WebVR standard
 						p.fragment Fractured landscape, uneven implementations.
 						p.fragment Thankfully #[a(href="https://github.com/googlevr/webvr-polyfill") there's a polyfill].
 					section.vertical-slide
@@ -60,22 +79,17 @@ html(lang="en")
 						p.fragment But first a moment of silence for Flash
 					section.vertical-slide
 						p WebGL, spec release: March 3rd, 2011
-						img(src="./assets/webgl-compat-chart.png")
-					section.vertical-slide
 						p WebGL 2.0, spec release: Jan. 2017
-						img(src="./assets/webgl-2_0-compat-chart.png")
 						p.fragment #[a(href="https://playcanv.as/e/p/44MRmJRU/") After the Flood ] brings console-level graphics -- to the #[em browser].
-					section.vertical-slide
-						h1 Web Assembly
-						p High-performance calculations complementing JS
+						p WebAssembly - high-performance calculations complementing JS
 						ul
-							li.fragment C++, 
-							li.fragment Rust, 
-							li.fragment Typescript 😈
+							li.fragment C++,
+							li.fragment Rust,
+							li.fragment Experimental: Typescript -- #[a(href="https://assemblyscript.org) assemblyscript.org") (assemblyscript.org) ]
 				section.slide-block
 					section.vertical-slide
 						h1 Picking our poison
-						p Lots of libraries to help ease the pain points of 3D web development.
+						p Lots of libraries to assist with 3D web development.
 					section.vertical-slide
 						h1 Three.JS
 						p Premiere, battle-hardened library
@@ -83,21 +97,26 @@ html(lang="en")
 					section.vertical-slide
 						h1 Other libraries
 						p.fragment Phaser - game-specific framework
-						p.fragment BabylonJS 
-						p.fragment PlayCanvas 
+						p.fragment BabylonJS
+						p.fragment PlayCanvas
 					section.vertical-slide
+						//- reactVR is great! It abstracts a lot of the input issues -- wands, gaze, keyboard/nouse - thru synthetic events! Built-in components yayyyy!
 						h1 ReactVR
-						p React... but 3D.
-						p Need to build a few things to say another line here.
+						p Built upon React Native.
+						p.fragment Built-in specialty components include:
+						ul 
+							li.fragment Pano and video pano
+							li.fragment Model
+							li.fragment Video and video controls
 					section.vertical-slide
 						h1 A-Frame!
 				section.slide-block
 					section.vertical-slide
 						h1 A-Frame facts
-						p Created by Mozilla at the end of 2015
-						p Open-source, version 0.7.0 as of Sept. 27th, 2017. 
-						p.fragment Focus on creating virtual reality experiences. 
-						p.fragment Used for AR, and general 3D scenes as well! 
+						p Framework on top of Three.JS
+						p Open-source, version 0.7.0 as of Sept. 27th, 2017.
+						p.fragment Focus on virtual reality experiences.
+						p.fragment Still good for AR, general 3D interactives
 					section.vertical-slide
 						h1 How A-Frame works
 					section.vertical-slide
@@ -123,11 +142,6 @@ html(lang="en")
 						.credit
 							h6 A-Frame #[a(href="https://aframe.io/examples/showcase/videosphere/") example 360 videosphere]
 					section.vertical-slide
-						h1 Entity-component system
-						p.fragment 3D/game design pattern
-						p.fragment Composition over inheritance 
-						p.fragment Think in components #[span(class="fragment") ...just like React]
-					section.vertical-slide
 						h1 Abstracts three.js
 						p.fragment A-Frame's HTML-like syntax makes it a breeze to build
 						p.fragment Set attributes to manipulate values like rotation, position and scale easily
@@ -140,31 +154,21 @@ html(lang="en")
 						h1 Visual inspector
 						p.fragment Placing objects in 3D space is a challenge!
 						p.fragment Visual inspector the perfect way get in and messy - just hit #[code ctrl/cmd-alt-a]!
-				section.slide-block
-					h1 Some fun community components
-					//- section.
-				section.slide-block
 					section.vertical-slide
-						h1 A-Frame in the wild
-					section(class="vertical-slide credited-section" data-background-image="./assets/mars-vr.PNG")
-						h1 Journalism
-						.credit
-							h6 #[a(href="https://www.washingtonpost.com/video/mars/public/") Mars: An Interactive Journey, Washington Post]
-					section(class="vertical-slide credited-section" data-background-image="https://cloud.githubusercontent.com/assets/3951311/24645643/a48d226a-1921-11e7-88b5-ab5c3741f097.gif")
-						h1 Games
-						.credit
-							h6 #[a(href="https://github.com/lance-gg/sprocketleague") Sprocket League, Lance.GG ]
-					section(class="vertical-slide credited-section" data-background-iframe="http://vr.zeldman.com/")
-						h1 Shopping!
-						.credit
+						h1 Entity-component system
+						p.fragment 3D/game design pattern
+						p.fragment Composition over inheritance 
+						p.fragment Think in components #[span(class="fragment") ...just like React]
 					section.vertical-slide
-						h1 My faves: weird virtual landscapes
-					section(class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/")
-						.credit
-							h6 #[a(href="https://github.com/CarpeDMT/CarpeDMT.github.io") CarpeDMT]
-					section(class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/")
-						.credit
-							h6 #[a(href="http://caff.glitch.me/%F0%9F%8D%95/") caff.glitch.me/🍕]
+						h1 Fun community components
+					section.vertical-slide
+						h1 Prebuilt environments
+					section.vertical-slide
+						h1 Animation with anime.js
+					section.vertical-slide
+						h1 Physics system with cannon.js
+				section.slide-block
+					h1 Let's make something
 				section.slide-block
 					h1 Call to action
 					p.fragment Use A-Frame to make games
@@ -174,8 +178,6 @@ html(lang="en")
 					h1 Tutorials
 					p.fragment Tutorial by #[a(href="http://tiny.cc/aframe-tutorial") Alexandra Etienne] (http://tiny.cc/aframe-tutorial)
 					p.fragment Talk by A-Frame maintainers #[a(href="http://tiny.cc/aframe-talk") Kevin Ngo and Diego Marcos] (http://tiny.cc/aframe-talk)
-				section.slide-block
-					h1 Let's make something! 
 				section.slide-block
 					h1 👋 👋 👋
 					p Twitter: 
