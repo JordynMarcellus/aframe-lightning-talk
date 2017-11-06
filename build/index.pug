@@ -32,7 +32,7 @@ html(lang="en")
 					section(class="vertical-slide credited-section" data-background-iframe="https://aframe.io/examples/showcase/a-painter/")
 						h1 Tiltbrush-alike
 						.credit
-							h6 #[a(href="https://aframe.io/examples/showcase/a-painter/") ]
+							h6 #[a(href="https://aframe.io/a-painter/") ]
 					section.vertical-slide
 						h1 My faves: weird virtual landscapes
 					section(class="vertical-slide credited-section" data-background-iframe="http://carpedmt.github.io/")
@@ -71,7 +71,7 @@ html(lang="en")
 						h1 The WebVR standard
 						p.fragment Fractured landscape, uneven implementations.
 						p.fragment Thankfully #[a(href="https://github.com/googlevr/webvr-polyfill") there's a polyfill].
-					section.vertical-slide
+					section.vertical-slide.web-vr-compatibiility
 						img(src="./assets/webvr-compat-chart.png")
 				section.slide-block
 					section.vertical-slide
@@ -79,9 +79,9 @@ html(lang="en")
 						p.fragment But first a moment of silence for Flash
 					section.vertical-slide
 						p WebGL, spec release: March 3rd, 2011
-						p WebGL 2.0, spec release: Jan. 2017
+						p.fragment WebGL 2.0, spec release: Jan. 2017
 						p.fragment #[a(href="https://playcanv.as/e/p/44MRmJRU/") After the Flood ] brings console-level graphics -- to the #[em browser].
-						p WebAssembly - high-performance calculations complementing JS
+						p.fragment WebAssembly - high-performance calculations complementing JS
 						ul
 							li.fragment C++,
 							li.fragment Rust,
@@ -96,7 +96,6 @@ html(lang="en")
 						p A-Frame and ReactVR both use Three.JS as their 3D rendering engine.
 					section.vertical-slide
 						h1 Other libraries
-						p.fragment Phaser - game-specific framework
 						p.fragment BabylonJS
 						p.fragment PlayCanvas
 					section.vertical-slide
@@ -127,17 +126,17 @@ html(lang="en")
 						h1 Example (360 video):
 						pre
 							code
-								|&lt;a-scene&gt;
-								|
-								|  &lt;a-assets&gt;
-								|
-								|    &lt;video id="video-texture" src="assets/test-video.mp4" autoplay muted crossorigin="anonymous" playsinline -webkit-playsinline&gt;&lt;/video&gt;
-								|
-								|  &lt;/a-assets&gt;
-								|
-								|  &lt;a-videosphere src="#video-texture" rotation="0 255 0"&gt;&lt;/a-videosphere&gt;
-								|
-								|&lt;/a-scene&gt;
+								| &lt;a-scene&gt;
+
+								|   &lt;a-assets&gt;
+
+								|     &lt;video id="video-texture" src="assets/test-video.mp4" autoplay muted crossorigin="anonymous" playsinline -webkit-playsinline&gt;&lt;/video&gt;
+
+								|   &lt;/a-assets&gt;
+
+								|   &lt;a-videosphere src="#video-texture" rotation="0 255 0"&gt;&lt;/a-videosphere&gt;
+
+								| &lt;/a-scene&gt;
 					section(class="vertical-slide credited-section" data-background-iframe="https://aframe.io/aframe/examples/boilerplate/360-video/")
 						.credit
 							h6 A-Frame #[a(href="https://aframe.io/examples/showcase/videosphere/") example 360 videosphere]
@@ -153,12 +152,12 @@ html(lang="en")
 					section.vertical-slide
 						h1 Visual inspector
 						p.fragment Placing objects in 3D space is a challenge!
-						p.fragment Visual inspector the perfect way get in and messy - just hit #[code ctrl/cmd-alt-a]!
+						p.fragment Visual inspector the perfect way get in and messy - just hit #[code ctrl/cmd-alt-i]!
 					section.vertical-slide
 						h1 Entity-component system
 						p.fragment 3D/game design pattern
+						p.fragment Entities built upon components
 						p.fragment Composition over inheritance 
-						p.fragment Think in components #[span(class="fragment") ...just like React]
 					section.vertical-slide
 						h1 Fun community components
 					section.vertical-slide
