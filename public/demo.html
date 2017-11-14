@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/bundle.css">
+        <title>A-Frame toy</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@%5E1.0.x/dist/aframe-environment-component.min.js"></script>
+        <script src="https://unpkg.com/aframe-text-geometry-component@0.5.x/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="convenience-store-obj" src="./assets/model.obj"></a-asset-item>
+                <a-asset-item id="convenience-store-mtl" src="./assets/materials.mtl"></a-asset-item>
+            </a-assets>
+            <a-entity environment="preset: tron; seed: 84">
+                <a-entity
+                    text-geometry="
+                        value: Awesome A-Frame -- 3D HTML for everyone;
+                        size: 0.25;
+                    "
+                    material="color: #fb000e; shader:msdf"
+                    position="-3 5 -5"
+                    animation="
+                        property: rotation;
+                        dir: alternate;
+                        from: 0 0 0;
+                        to: 0 0 180;
+                        startEvents: click;
+                    "
+                >
+                </a-entity>
+                <a-entity 
+                    obj-model="mtl:#convenience-store-mtl; obj:#convenience-store-obj" 
+                    position="0.607 1.795 -10" 
+                    rotation="0 -90 0" 
+                    scale="2 2 2"
+                >
+                </a-entity>
+            </a-entity>
+            <a-camera>
+                <a-cursor
+                    fuse="true"
+                    animation__scale="property: scale; to: 2 2 2; dur: 50; startEvents:fusing;restartEvents: fusing"
+                    animation__circleRotate="property: geometry.thetaLength; easing: linear; from: 0; to: 360; dur:1500;startEvents:fusing;restartEvents: fusing"
+                    animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150; startEvents: click"
+                ></a-cursor>
+            </a-camera>
+        </a-scene>
+    </body>
+</html>
