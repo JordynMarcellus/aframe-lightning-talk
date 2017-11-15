@@ -33,19 +33,13 @@
                     "
                 >
                 </a-entity>
-                <a-entity 
-                    obj-model="mtl:#convenience-store-mtl; obj:#convenience-store-obj" 
-                    position="0.607 1.795 -10" 
-                    rotation="0 -90 0" 
-                    scale="2 2 2"
-                >
+                <!-- <a-entity obj-model="mtl:#convenience-store-mtl; obj:#convenience-store-obj" position="0.607 1.795 -10" rotation="0 -90 0" scale="2 2 2"> -->
                 </a-entity>
             </a-entity>
             <a-camera>
                 <a-cursor
                     fuse="true"
-                    animation__scale="property: scale; to: 2 2 2; dur: 50; startEvents:fusing;restartEvents: fusing"
-                    animation__circleRotate="property: geometry.thetaLength; easing: linear; from: 0; to: 360; dur:1500;startEvents:fusing;restartEvents: fusing"
+                    animation__scale="property: scale; to: 2 2 2; dur: 50; startEvents:fusing;"
                     animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150; startEvents: click"
                 ></a-cursor>
             </a-camera>
